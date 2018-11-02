@@ -1,4 +1,4 @@
-# PHP 7.2 Build Environment
+# PHP 7.2 Build Environmen (with XDebug)t
 
 This image contains a light image based on ubuntu 18.04 LTS and includes the latest PHP 7.2 CLI binaries from the [Ondřej Surý](https://launchpad.net/~ondrej/+archive/ubuntu/php) PPA.
 
@@ -15,6 +15,7 @@ It also has the following extensions installed:
 1. MySQL (both PDO and mysqli)
 1. Sqlite 3
 1. BCMath
+1. **xdebug**
 
 
 It also includes common tools used to build and run PHP applications:
