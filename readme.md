@@ -22,3 +22,6 @@ It also includes common tools used to build and run PHP applications:
 1. unzip
 1. git
 1. jq (Command line JSON parser)
+1. composer
+
+The image is rebuilt nightly, as well as when the upstream images ([Ubuntu](https://hub.docker.com/_/ubuntu/) and [Composer](https://hub.docker.com/_/composer/)) push a new version. So this image should usually contain the latest fixes and updates.
