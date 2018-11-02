@@ -14,6 +14,7 @@ It also has the following extensions installed:
 1. Curl
 1. MySQL (both PDO and mysqli)
 1. Sqlite 3
+1. BCMath
 
 
 It also includes common tools used to build and run PHP applications:
