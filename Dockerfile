@@ -24,7 +24,11 @@ RUN apt-get update \
       php7.2-mysql \
       php7.2-sqlite3 \
       php7.2-bcmath \
-    && apt-get purge -y software-properties-common \
+      php-redis \
+      php-ldap \
+      php-amqp \
+    && apt-get purge -y \
+      software-properties-common \
     && apt-get autoremove --purge -y \
     && rm -rf /var/lib/apt/lists/*
 
