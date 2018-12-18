@@ -19,13 +19,20 @@ It also has the following extensions installed:
 1. XML
 1. Zip
 
-
 It also includes common tools used to build and run PHP applications:
 
-1. composer
+1. Composer
 1. curl
-1. git
+1. Git
 1. jq (Command line JSON parser)
-1. unzip
+1. MySQL Client Tools
+1. Unzip
+
+It also includes a couple of text editors for convenience:
+
+1. Nano
+1. Vim
+
+Lastly, it also has the [prestissimo composer plugin](https://github.com/hirak/prestissimo), which allows parallel installs during composer installs and updates.
 
 The image is rebuilt nightly, as well as when the upstream images ([Ubuntu](https://hub.docker.com/_/ubuntu/) and [Composer](https://hub.docker.com/_/composer/)) push a new version. So this image should usually contain the latest fixes and updates.

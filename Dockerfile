@@ -3,12 +3,15 @@ MAINTAINER developmentteamserenity@fasthosts.com
 
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-      software-properties-common \
-      tzdata \
       curl \
-      unzip \
       git \
       jq \
+      mysql-client \
+      nano \
+      software-properties-common \
+      tzdata \
+      unzip \
+      vim \
     && add-apt-repository -y ppa:ondrej/php \
     && apt-get update \
     && apt-get install -y --no-install-recommends \
@@ -38,3 +41,5 @@ USER 1000
 ENV HOME /tmp
 
 COPY --chown=1000:1000 --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+RUN composer global require hirak/prestissimo && composer clear-cache
