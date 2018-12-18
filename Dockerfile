@@ -6,6 +6,7 @@ RUN apt-get update \
       curl \
       git \
       jq \
+      mysql-client \
       nano \
       software-properties-common \
       tzdata \
