@@ -14,8 +14,9 @@ RUN apt-get update \
       vim \
     && add-apt-repository -y ppa:ondrej/php \
     && apt-get update \
-    && apt-get install -y --no-install-recommends \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
       php7.2-bcmath \
+      php7.2-bz2 \
       php7.2-cli \
       php7.2-curl \
       php7.2-gd \
@@ -30,9 +31,9 @@ RUN apt-get update \
       php-amqp \
       php-ldap \
       php-redis \
-    && apt-get purge -y \
+    && DEBIAN_FRONTEND=noninteractive apt-get purge -y \
       software-properties-common \
-    && apt-get autoremove --purge -y \
+    && DEBIAN_FRONTEND=noninteractive apt-get autoremove --purge -y \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app/
