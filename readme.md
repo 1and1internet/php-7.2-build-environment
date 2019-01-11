@@ -2,6 +2,8 @@
 
 This image contains a light image based on ubuntu 18.04 LTS and includes the latest PHP 7.2 CLI binaries from the [Ondřej Surý](https://launchpad.net/~ondrej/+archive/ubuntu/php) PPA. It is built on top of [1and1internet/php-build-environment-base](https://cloud.docker.com/u/1and1internet/repository/docker/1and1internet/php-build-environment-base).
 
+This tag (xdebug) has xdebug enabled and no opcache.
+
 It has the following PHP extensions installed:
 
 1. AMQP
@@ -13,10 +15,10 @@ It has the following PHP extensions installed:
 1. LDAP
 1. MBString
 1. MySQL (both PDO and mysqli)
-1. Opcache
 1. Readline
 1. Redis
 1. Sqlite 3
+1. Xdebug
 1. XML
 1. Zip
 
